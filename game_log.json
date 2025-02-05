@@ -1,0 +1,315 @@
+[
+    {
+        "player": "a",
+        "hand": [
+            "Sota of Cups",
+            "3 of Swords",
+            "Rey of Coins"
+        ],
+        "table_before": [
+            "5 of Batons",
+            "4 of Coins",
+            "Caballo of Cups",
+            "1 of Swords"
+        ],
+        "played_card": "Rey of Coins",
+        "action": "Captured 5 of Batons",
+        "escoba": false,
+        "table_after": [
+            "4 of Coins",
+            "Caballo of Cups",
+            "1 of Swords"
+        ]
+    },
+    {
+        "player": "2",
+        "hand": [
+            "4 of Batons",
+            "3 of Coins",
+            "1 of Batons"
+        ],
+        "table_before": [
+            "4 of Coins",
+            "Caballo of Cups",
+            "1 of Swords"
+        ],
+        "played_card": "1 of Batons",
+        "action": "Captured 4 of Coins, Caballo of Cups, 1 of Swords",
+        "escoba": true,
+        "table_after": []
+    },
+    {
+        "player": "a",
+        "hand": [
+            "5 of Swords",
+            "1 of Coins",
+            "6 of Cups"
+        ],
+        "table_before": [],
+        "played_card": "5 of Swords",
+        "action": "Placed card on table (no capture)",
+        "escoba": false,
+        "table_after": [
+            "5 of Swords"
+        ]
+    },
+    {
+        "player": "2",
+        "hand": [
+            "2 of Swords",
+            "3 of Cups",
+            "2 of Batons"
+        ],
+        "table_before": [
+            "5 of Swords"
+        ],
+        "played_card": "2 of Swords",
+        "action": "Placed card on table (no capture)",
+        "escoba": false,
+        "table_after": [
+            "5 of Swords",
+            "2 of Swords"
+        ]
+    },
+    {
+        "player": "a",
+        "hand": [
+            "Sota of Coins",
+            "Caballo of Coins",
+            "5 of Cups"
+        ],
+        "table_before": [
+            "5 of Swords",
+            "2 of Swords"
+        ],
+        "played_card": "Sota of Coins",
+        "action": "Captured 5 of Swords, 2 of Swords",
+        "escoba": true,
+        "table_after": []
+    },
+    {
+        "player": "2",
+        "hand": [
+            "2 of Coins",
+            "4 of Swords",
+            "Rey of Swords"
+        ],
+        "table_before": [],
+        "played_card": "4 of Swords",
+        "action": "Placed card on table (no capture)",
+        "escoba": false,
+        "table_after": [
+            "4 of Swords"
+        ]
+    },
+    {
+        "player": "a",
+        "hand": [
+            "4 of Cups",
+            "Sota of Swords",
+            "Caballo of Swords"
+        ],
+        "table_before": [
+            "4 of Swords"
+        ],
+        "played_card": "Caballo of Swords",
+        "action": "Placed card on table (no capture)",
+        "escoba": false,
+        "table_after": [
+            "4 of Swords",
+            "Caballo of Swords"
+        ]
+    },
+    {
+        "player": "2",
+        "hand": [
+            "Rey of Batons",
+            "Caballo of Batons",
+            "7 of Batons"
+        ],
+        "table_before": [
+            "4 of Swords",
+            "Caballo of Swords"
+        ],
+        "played_card": "Rey of Batons",
+        "action": "Placed card on table (no capture)",
+        "escoba": false,
+        "table_after": [
+            "4 of Swords",
+            "Caballo of Swords",
+            "Rey of Batons"
+        ]
+    },
+    {
+        "player": "a",
+        "hand": [
+            "6 of Coins",
+            "1 of Cups",
+            "Rey of Cups"
+        ],
+        "table_before": [
+            "4 of Swords",
+            "Caballo of Swords",
+            "Rey of Batons"
+        ],
+        "played_card": "6 of Coins",
+        "action": "Captured Caballo of Swords",
+        "escoba": false,
+        "table_after": [
+            "4 of Swords",
+            "Rey of Batons"
+        ]
+    },
+    {
+        "player": "2",
+        "hand": [
+            "3 of Batons",
+            "6 of Swords",
+            "2 of Cups"
+        ],
+        "table_before": [
+            "4 of Swords",
+            "Rey of Batons"
+        ],
+        "played_card": "2 of Cups",
+        "action": "Placed card on table (no capture)",
+        "escoba": false,
+        "table_after": [
+            "4 of Swords",
+            "Rey of Batons",
+            "2 of Cups"
+        ]
+    },
+    {
+        "player": "a",
+        "hand": [
+            "5 of Coins",
+            "7 of Coins",
+            "7 of Cups"
+        ],
+        "table_before": [
+            "4 of Swords",
+            "Rey of Batons",
+            "2 of Cups"
+        ],
+        "played_card": "5 of Coins",
+        "action": "Captured Rey of Batons",
+        "escoba": false,
+        "table_after": [
+            "4 of Swords",
+            "2 of Cups"
+        ]
+    },
+    {
+        "player": "2",
+        "hand": [
+            "7 of Swords",
+            "6 of Batons",
+            "Sota of Batons"
+        ],
+        "table_before": [
+            "4 of Swords",
+            "2 of Cups"
+        ],
+        "played_card": "7 of Swords",
+        "action": "Placed card on table (no capture)",
+        "escoba": false,
+        "table_after": [
+            "4 of Swords",
+            "2 of Cups",
+            "7 of Swords"
+        ]
+    },
+    {
+        "player": "a",
+        "hand": [
+            "7 of Coins",
+            "7 of Cups"
+        ],
+        "table_before": [
+            "4 of Swords",
+            "2 of Cups",
+            "7 of Swords"
+        ],
+        "played_card": "7 of Coins",
+        "action": "Placed card on table (no capture)",
+        "escoba": false,
+        "table_after": [
+            "4 of Swords",
+            "2 of Cups",
+            "7 of Swords",
+            "7 of Coins"
+        ]
+    },
+    {
+        "player": "2",
+        "hand": [
+            "6 of Batons",
+            "Sota of Batons"
+        ],
+        "table_before": [
+            "4 of Swords",
+            "2 of Cups",
+            "7 of Swords",
+            "7 of Coins"
+        ],
+        "played_card": "6 of Batons",
+        "action": "Captured 2 of Cups, 7 of Swords",
+        "escoba": false,
+        "table_after": [
+            "4 of Swords",
+            "7 of Coins"
+        ]
+    },
+    {
+        "player": "a",
+        "hand": [
+            "7 of Cups"
+        ],
+        "table_before": [
+            "4 of Swords",
+            "7 of Coins"
+        ],
+        "played_card": "7 of Cups",
+        "action": "Placed card on table (no capture)",
+        "escoba": false,
+        "table_after": [
+            "4 of Swords",
+            "7 of Coins",
+            "7 of Cups"
+        ]
+    },
+    {
+        "player": "2",
+        "hand": [
+            "Sota of Batons"
+        ],
+        "table_before": [
+            "4 of Swords",
+            "7 of Coins",
+            "7 of Cups"
+        ],
+        "played_card": "Sota of Batons",
+        "action": "Captured 7 of Coins",
+        "escoba": false,
+        "table_after": [
+            "4 of Swords",
+            "7 of Cups"
+        ]
+    },
+    {
+        "event": "finalize_round",
+        "player": "2",
+        "collected": [
+            "4 of Swords",
+            "7 of Cups"
+        ]
+    },
+    {
+        "event": "final_scores",
+        "scores": {
+            "a": 2,
+            "2": 3
+        }
+    }
+]

@@ -6,8 +6,8 @@ $(document).ready(function(){
          container.empty();
          for(var i = 1; i <= n; i++){
               var html = '<div class="form-group">';
-              html += '<label for="player-model-' + i + '">Model for AI Player ' + i + ' (default: openai/gpt-4o):</label>';
-              html += '<input type="text" class="form-control" id="player-model-' + i + '" placeholder="openai/gpt-4o">';
+              html += '<label for="player-model-' + i + '">Model for Player ' + i ;
+              html += '<input type="text" class="form-control" id="player-model-' + i + '" placeholder="google/gemini-2.0-flash-001">';
               html += '</div>';
               container.append(html);
          }

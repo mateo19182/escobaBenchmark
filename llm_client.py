@@ -40,8 +40,8 @@ class LLMClient:
 Rules:
 - On your turn, choose one card from your hand to play.
 - You may capture a set of table cards if the sum of their values plus the played card's value equals exactly 15.
-- If a capture move can take all the table cards (an escoba), prefer that move.
-- If no valid capture exists, simply play a card from your hand to add it to the table.
+- If a capture move can take all the table cards (an escoba), that is the best move.
+- If no valid capture exists, simply play a card from your hand to add it to the table. Make sure to try to prevent the opponent from capturing.
 
 Your task: Return a move as a JSON object with two keys:
    "card": The chosen card from your hand to play (e.g., "7 of Coins").

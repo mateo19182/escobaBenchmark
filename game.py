@@ -61,7 +61,7 @@ class Deck:
 # Player Class
 # -------------------------------
 class Player:
-    def __init__(self, name, is_ai=False, api_key=None, model="openai/gpt-4o"):
+    def __init__(self, name, is_ai=False, api_key=None, model="google/gemini-2.0-flash-001"):
         self.name = name
         self.is_ai = is_ai
         self.hand = []

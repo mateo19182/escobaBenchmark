@@ -13,7 +13,7 @@ Place your OpenRouter API key in the .env file.
 
 
 ```
-OPENROUTER_API_KEY=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
+OPENROUTER_API_KEY=sk-or-v1-...
 DEFAULT_MODEL=google/gemini-2.0-flash-001 
 ```
 

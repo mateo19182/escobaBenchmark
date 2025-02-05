@@ -2,6 +2,7 @@ import logging
 from game import GameManager, Player
 from llm_client import LLMClient
 from utils import setup_logging, save_game_log
+from config import OPENROUTER_API_KEY, DEFAULT_MODEL  # Import configuration
 
 def main():
     setup_logging()
@@ -18,13 +19,14 @@ def main():
         except ValueError:
             print("Invalid input. Please enter a number.")
 
-    # Get the OpenRouter API key.
-    api_key = input("Enter your OpenRouter API Key: ")
+    # Use the API key from the config if the user leaves it blank.
+    api_key = input("Enter your OpenRouter API Key (default from config): ") or OPENROUTER_API_KEY
 
     players = []
     for i in range(num_players):
-        model_input = input(f"Enter model for AI Player {i+1} (default: openai/gpt-4o): ").strip()
-        model_choice = model_input if model_input else "openai/gpt-4o"
+        model_input = input(f"Enter model for AI Player {i+1} (default from config): ").strip()
+        # Use provided model or fall back to default from config.
+        model_choice = model_input if model_input else DEFAULT_MODEL
         players.append(Player(f"AI Player {i+1}", is_ai=True, api_key=api_key, model=model_choice))
 
     game_manager = GameManager(players)

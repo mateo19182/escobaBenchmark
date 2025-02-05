@@ -63,7 +63,7 @@ Respond ONLY with a valid JSON object.
             "X-Title": "<YOUR_SITE_NAME>"
         }
         # Use the player's model if specified, or default.
-        model_name = getattr(player, "model", "openai/gpt-4o")
+        model_name = getattr(player, "model", "google/gemini-2.0-flash-001")
         data = json.dumps({
             "model": model_name,
             "messages": [

@@ -137,6 +137,7 @@ class GameManager:
     def play_turn(self, player, ai_client=None):
         """
         Processes a single turn for a player using the LLM to decide the move.
+        Now properly removes the played card from the player's hand.
         """
         logging.debug(f"{player.name}'s turn with hand: {player.hand}")
         logging.debug(f"Current table: {self.table}")
@@ -148,7 +149,7 @@ class GameManager:
 
         # Always use LLM-based decision.
         card_str, capture_cards_strs, move_error = ai_client.get_move(player, self.table)
-        
+
         # Map the returned card string to an actual Card object from the player's hand.
         selected_card = None
         for card in player.hand:
@@ -157,7 +158,10 @@ class GameManager:
                 break
         if not selected_card:
             selected_card = player.hand[0]  # Fallback if not found.
-        
+
+        # IMPORTANT FIX: Remove the played card from the player's hand
+        player.hand.remove(selected_card)
+
         # Map each capture card string to actual Card objects from the table.
         capture_cards = []
         for cap_str in capture_cards_strs:
@@ -175,6 +179,7 @@ class GameManager:
                 for captured in capture_cards:
                     if captured in self.table:
                         self.table.remove(captured)
+                # Add played card and captured cards to player's pile
                 player.captured.append(selected_card)
                 player.captured.extend(capture_cards)
                 self.last_capture_player = player
@@ -186,7 +191,7 @@ class GameManager:
                 else:
                     move_log["escoba"] = False
             else:
-                # If the provided capture is invalid, treat as no capture.
+                # If the provided capture is invalid, treat move as a non-capture move:
                 self.table.append(selected_card)
                 move_log["action"] = "Played card to table (invalid capture provided, treated as no capture)"
                 move_log["escoba"] = False

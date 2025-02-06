@@ -3,7 +3,8 @@ from game import GameManager, Player
 from llm_client import LLMClient
 from rankings import RankingSystem
 import logging
-from config import OPENROUTER_API_KEY, DEFAULT_MODEL  # Import configuration
+from config import OPENROUTER_API_KEY, DEFAULT_MODEL, DEFAULT_MODELS  # Updated import
+from utils import save_game_log
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG,
@@ -15,7 +16,9 @@ ranking_system = RankingSystem()
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index.html", 
+                         default_models=DEFAULT_MODELS,
+                         default_api_key=OPENROUTER_API_KEY)
 
 @app.route("/rankings")
 def rankings():
@@ -43,13 +46,13 @@ def simulate():
         # Use provided model if available; otherwise default.
         model_choice = models[i] if i < len(models) and models[i].strip() != "" else DEFAULT_MODEL
         # Use the model name as the player name to be consistent with CLI
-        players.append(Player(model_choice, is_ai=True, api_key=api_key, model=model_choice))
+        players.append(Player(model_choice, api_key=api_key, model=model_choice))
     logger.debug(f"Created players: {players}")
     
     game_manager = GameManager(players)
     ai_client = LLMClient(api_key=api_key)
     
-    logger.debug("Starting game simulation...")
+    logger.debug("Starting game...")
     final_scores = game_manager.play_game(ai_client=ai_client)
     logger.debug(f"Game completed. Final scores: {final_scores}")
     
@@ -57,7 +60,23 @@ def simulate():
     ranking_system.update_rankings(final_scores)
     logger.debug("Rankings updated successfully")
     
-    return jsonify(game_log=game_manager.game_log, final_scores=final_scores)
+    # Save detailed game log
+    log_file = save_game_log(
+        game_manager.game_log,
+        metadata=game_manager.metadata
+    )
+    logger.info(f"Game log saved to {log_file}")
+    
+    return jsonify(
+        game_log=game_manager.game_log,
+        final_scores=final_scores,
+        log_file=log_file
+    )
+
+@app.route("/models")
+def models():
+    logger.debug(f"Returning models: {DEFAULT_MODELS}")
+    return jsonify(DEFAULT_MODELS)
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)

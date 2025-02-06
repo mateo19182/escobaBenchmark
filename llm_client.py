@@ -13,6 +13,35 @@ class LLMClient:
     """
     def __init__(self, api_key):
         self.api_key = api_key
+        print(self.api_key)
+        self.system_prompt = """You are playing the Spanish card game Escoba. Your role is to make valid moves according to these rules:
+        
+Card Values:
+- Number cards (1-7): Face value
+- Sota (Jack): 8 points
+- Caballo (Knight): 9 points
+- Rey (King): 10 points
+
+Core Rules:
+1. On your turn, you must play exactly one card from your hand
+2. If possible, you may capture cards from the table if:
+   - The sum of your played card plus chosen table cards equals EXACTLY 15
+   - You can only capture cards that are currently on the table
+3. Special Achievement (Escoba):
+   - If you capture ALL cards from the table, this is called an "escoba"
+   - An escoba is worth an extra point
+4. If you cannot make a 15-sum capture, you must place your card on the table
+
+Strategy Tips:
+- Always check for possible captures that sum to 15
+- Prioritize moves that achieve an escoba (capturing all table cards)
+- If no capture is possible, try to avoid leaving easy captures for opponents
+
+Your responses must be valid JSON objects with:
+{
+  "card": "The card you choose to play from your hand",
+  "capture": ["Array of table cards to capture (empty if no capture)"]
+}"""
 
     def find_valid_captures(self, played_card, table_cards):
         needed = 15 - played_card.value
@@ -35,28 +64,12 @@ class LLMClient:
         hand_list = [str(card) for card in player.hand]
         table_list = [str(card) for card in table_cards]
         
-        prompt = f"""You are an AI playing the card game Escoba. The card values are defined as:
-1 = 1, 2 = 2, 3 = 3, 4 = 4, 5 = 5, 6 = 6, 7 = 7, Sota = 8, Caballo = 9, Rey = 10.
-Rules:
-- On your turn, choose one card from your hand to play.
-- You may capture a set of table cards if the sum of their values plus the played card's value equals exactly 15.
-- If a capture move can take all the table cards (an escoba), that is the best move.
-- If no valid capture exists, simply play a card from your hand to add it to the table. Make sure to try to prevent the opponent from capturing.
-
-Your task: Return a move as a JSON object with two keys:
-   "card": The chosen card from your hand to play (e.g., "7 of Coins").
-   "capture": A list of table cards to capture (or an empty list if no capture).
-
-Ensure that:
-- The chosen card is one from your hand.
-- The capture, if any, is a valid subset of the table cards such that the sum of the played card's value and the capture set equals 15.
-
-Data provided:
+        user_prompt = f"""Current Game State:
 Your hand: {hand_list}
 Table cards: {table_list}
 
-Respond ONLY with a valid JSON object.
-"""
+Choose your move, responding with only a JSON object."""
+
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "HTTP-Referer": "<YOUR_SITE_URL>",
@@ -68,8 +81,12 @@ Respond ONLY with a valid JSON object.
             "model": model_name,
             "messages": [
                 {
+                    "role": "system",
+                    "content": self.system_prompt
+                },
+                {
                     "role": "user",
-                    "content": prompt
+                    "content": user_prompt
                 }
             ]
         })

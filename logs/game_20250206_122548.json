@@ -1,0 +1,474 @@
+{
+  "metadata": {
+    "timestamp": "2025-02-06T12:25:31.154579",
+    "players": [
+      {
+        "name": "google/gemini-2.0-flash-001",
+        "model": "google/gemini-2.0-flash-001"
+      },
+      {
+        "name": "openai/gpt-4o-mini",
+        "model": "openai/gpt-4o-mini"
+      }
+    ],
+    "dealer_index": 1,
+    "game_version": "1.0",
+    "rules": {
+      "capture_sum": 15,
+      "cards_per_hand": 3,
+      "initial_table_cards": 4
+    }
+  },
+  "timestamp": "2025-02-06T12:25:48.772109",
+  "game_log": [
+    {
+      "player": "google/gemini-2.0-flash-001",
+      "hand": [
+        "4 of Swords",
+        "Caballo of Swords",
+        "2 of Swords"
+      ],
+      "table_before": [
+        "1 of Batons",
+        "Sota of Coins",
+        "5 of Coins",
+        "6 of Coins"
+      ],
+      "played_card": "4 of Swords",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Batons",
+        "Sota of Coins",
+        "5 of Coins",
+        "6 of Coins",
+        "4 of Swords"
+      ]
+    },
+    {
+      "player": "openai/gpt-4o-mini",
+      "hand": [
+        "3 of Coins",
+        "6 of Batons",
+        "5 of Swords"
+      ],
+      "table_before": [
+        "1 of Batons",
+        "Sota of Coins",
+        "5 of Coins",
+        "6 of Coins",
+        "4 of Swords"
+      ],
+      "played_card": "6 of Batons",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Batons",
+        "Sota of Coins",
+        "5 of Coins",
+        "6 of Coins",
+        "4 of Swords",
+        "6 of Batons"
+      ]
+    },
+    {
+      "player": "google/gemini-2.0-flash-001",
+      "hand": [
+        "3 of Batons",
+        "4 of Cups",
+        "Sota of Cups"
+      ],
+      "table_before": [
+        "1 of Batons",
+        "Sota of Coins",
+        "5 of Coins",
+        "6 of Coins",
+        "4 of Swords",
+        "6 of Batons"
+      ],
+      "played_card": "Sota of Cups",
+      "action": "Captured 1 of Batons, 6 of Coins",
+      "escoba": false,
+      "table_after": [
+        "Sota of Coins",
+        "5 of Coins",
+        "4 of Swords",
+        "6 of Batons"
+      ]
+    },
+    {
+      "player": "openai/gpt-4o-mini",
+      "hand": [
+        "Rey of Swords",
+        "1 of Swords",
+        "6 of Cups"
+      ],
+      "table_before": [
+        "Sota of Coins",
+        "5 of Coins",
+        "4 of Swords",
+        "6 of Batons"
+      ],
+      "played_card": "6 of Cups",
+      "action": "Captured 5 of Coins, 4 of Swords",
+      "escoba": false,
+      "table_after": [
+        "Sota of Coins",
+        "6 of Batons"
+      ]
+    },
+    {
+      "player": "google/gemini-2.0-flash-001",
+      "hand": [
+        "Sota of Swords",
+        "7 of Cups",
+        "3 of Swords"
+      ],
+      "table_before": [
+        "Sota of Coins",
+        "6 of Batons"
+      ],
+      "played_card": "Sota of Swords",
+      "action": "Played card to table (no capture)",
+      "escoba": false,
+      "table_after": [
+        "Sota of Coins",
+        "6 of Batons",
+        "Sota of Swords"
+      ]
+    },
+    {
+      "player": "openai/gpt-4o-mini",
+      "hand": [
+        "Caballo of Coins",
+        "Caballo of Batons",
+        "7 of Coins"
+      ],
+      "table_before": [
+        "Sota of Coins",
+        "6 of Batons",
+        "Sota of Swords"
+      ],
+      "played_card": "7 of Coins",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "Sota of Coins",
+        "6 of Batons",
+        "Sota of Swords",
+        "7 of Coins"
+      ]
+    },
+    {
+      "player": "google/gemini-2.0-flash-001",
+      "hand": [
+        "1 of Cups",
+        "3 of Cups",
+        "Caballo of Cups"
+      ],
+      "table_before": [
+        "Sota of Coins",
+        "6 of Batons",
+        "Sota of Swords",
+        "7 of Coins"
+      ],
+      "played_card": "Caballo of Cups",
+      "action": "Captured 6 of Batons",
+      "escoba": false,
+      "table_after": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins"
+      ]
+    },
+    {
+      "player": "openai/gpt-4o-mini",
+      "hand": [
+        "Rey of Coins",
+        "5 of Batons",
+        "7 of Swords"
+      ],
+      "table_before": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins"
+      ],
+      "played_card": "5 of Batons",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons"
+      ]
+    },
+    {
+      "player": "google/gemini-2.0-flash-001",
+      "hand": [
+        "Rey of Batons",
+        "2 of Batons",
+        "2 of Cups"
+      ],
+      "table_before": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons"
+      ],
+      "played_card": "2 of Cups",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons",
+        "2 of Cups"
+      ]
+    },
+    {
+      "player": "openai/gpt-4o-mini",
+      "hand": [
+        "4 of Batons",
+        "1 of Coins",
+        "2 of Coins"
+      ],
+      "table_before": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons",
+        "2 of Cups"
+      ],
+      "played_card": "4 of Batons",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons",
+        "2 of Cups",
+        "4 of Batons"
+      ]
+    },
+    {
+      "player": "google/gemini-2.0-flash-001",
+      "hand": [
+        "5 of Cups",
+        "Sota of Batons",
+        "6 of Swords"
+      ],
+      "table_before": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons",
+        "2 of Cups",
+        "4 of Batons"
+      ],
+      "played_card": "5 of Cups",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons",
+        "2 of Cups",
+        "4 of Batons",
+        "5 of Cups"
+      ]
+    },
+    {
+      "player": "openai/gpt-4o-mini",
+      "hand": [
+        "Rey of Cups",
+        "4 of Coins",
+        "7 of Batons"
+      ],
+      "table_before": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons",
+        "2 of Cups",
+        "4 of Batons",
+        "5 of Cups"
+      ],
+      "played_card": "7 of Batons",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons",
+        "2 of Cups",
+        "4 of Batons",
+        "5 of Cups",
+        "7 of Batons"
+      ]
+    },
+    {
+      "player": "google/gemini-2.0-flash-001",
+      "hand": [
+        "Sota of Batons",
+        "6 of Swords"
+      ],
+      "table_before": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons",
+        "2 of Cups",
+        "4 of Batons",
+        "5 of Cups",
+        "7 of Batons"
+      ],
+      "played_card": "Sota of Batons",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons",
+        "2 of Cups",
+        "4 of Batons",
+        "5 of Cups",
+        "7 of Batons",
+        "Sota of Batons"
+      ]
+    },
+    {
+      "player": "openai/gpt-4o-mini",
+      "hand": [
+        "Rey of Cups",
+        "4 of Coins"
+      ],
+      "table_before": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons",
+        "2 of Cups",
+        "4 of Batons",
+        "5 of Cups",
+        "7 of Batons",
+        "Sota of Batons"
+      ],
+      "played_card": "4 of Coins",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons",
+        "2 of Cups",
+        "4 of Batons",
+        "5 of Cups",
+        "7 of Batons",
+        "Sota of Batons",
+        "4 of Coins"
+      ]
+    },
+    {
+      "player": "google/gemini-2.0-flash-001",
+      "hand": [
+        "6 of Swords"
+      ],
+      "table_before": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons",
+        "2 of Cups",
+        "4 of Batons",
+        "5 of Cups",
+        "7 of Batons",
+        "Sota of Batons",
+        "4 of Coins"
+      ],
+      "played_card": "6 of Swords",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons",
+        "2 of Cups",
+        "4 of Batons",
+        "5 of Cups",
+        "7 of Batons",
+        "Sota of Batons",
+        "4 of Coins",
+        "6 of Swords"
+      ]
+    },
+    {
+      "player": "openai/gpt-4o-mini",
+      "hand": [
+        "Rey of Cups"
+      ],
+      "table_before": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons",
+        "2 of Cups",
+        "4 of Batons",
+        "5 of Cups",
+        "7 of Batons",
+        "Sota of Batons",
+        "4 of Coins",
+        "6 of Swords"
+      ],
+      "played_card": "Rey of Cups",
+      "action": "Played card to table (no capture)",
+      "escoba": false,
+      "table_after": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons",
+        "2 of Cups",
+        "4 of Batons",
+        "5 of Cups",
+        "7 of Batons",
+        "Sota of Batons",
+        "4 of Coins",
+        "6 of Swords",
+        "Rey of Cups"
+      ]
+    },
+    {
+      "event": "finalize_round",
+      "player": "google/gemini-2.0-flash-001",
+      "collected": [
+        "Sota of Coins",
+        "Sota of Swords",
+        "7 of Coins",
+        "5 of Batons",
+        "2 of Cups",
+        "4 of Batons",
+        "5 of Cups",
+        "7 of Batons",
+        "Sota of Batons",
+        "4 of Coins",
+        "6 of Swords",
+        "Rey of Cups"
+      ]
+    },
+    {
+      "event": "final_scores",
+      "scores": {
+        "google/gemini-2.0-flash-001": 3,
+        "openai/gpt-4o-mini": 0
+      }
+    }
+  ]
+}

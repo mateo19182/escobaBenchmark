@@ -1,6 +1,7 @@
 import random
 from itertools import combinations
 import logging
+from datetime import datetime
 
 # -------------------------------
 # EarlyTermination Exception
@@ -61,9 +62,8 @@ class Deck:
 # Player Class
 # -------------------------------
 class Player:
-    def __init__(self, name, is_ai=False, api_key=None, model="google/gemini-2.0-flash-001"):
+    def __init__(self, name, api_key=None, model="google/gemini-2.0-flash-001"):
         self.name = name
-        self.is_ai = is_ai
         self.hand = []
         self.captured = []  # List to store captured cards.
         self.escobas = 0
@@ -72,7 +72,7 @@ class Player:
         self.error_count = 0  # Tracks invalid responses/moves
 
     def __repr__(self):
-        return f"{self.name} {'(AI)' if self.is_ai else ''}"
+        return f"{self.name}"
 
 # -------------------------------
 # GameManager Class
@@ -83,11 +83,24 @@ class GameManager:
         self.deck = Deck()
         self.deck.shuffle()
         self.table = []
-        self.game_log = []  # A list to store the move history for JSON logging.
-
-        # For this demo, assume the last player in the players list is the dealer.
+        self.game_log = []
+        self.metadata = {
+            "timestamp": datetime.now().isoformat(),
+            "players": [
+                {
+                    "name": player.name,
+                    "model": player.model,
+                } for player in players
+            ],
+            "dealer_index": len(players) - 1,
+            "game_version": "1.0",
+            "rules": {
+                "capture_sum": 15,
+                "cards_per_hand": 3,
+                "initial_table_cards": 4
+            }
+        }
         self.dealer_index = len(players) - 1
-        # Track the last capturing player to pick up remaining table cards.
         self.last_capture_player = None
         self.early_termination = False
         self.early_loser = None

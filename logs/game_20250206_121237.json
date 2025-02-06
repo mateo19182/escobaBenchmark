@@ -1,0 +1,604 @@
+{
+  "metadata": {
+    "timestamp": "2025-02-06T12:12:23.845106",
+    "players": [
+      {
+        "name": "google/gemini-2.0-flash-001",
+        "model": "google/gemini-2.0-flash-001"
+      },
+      {
+        "name": "mistralai/ministral-8b",
+        "model": "mistralai/ministral-8b"
+      }
+    ],
+    "dealer_index": 1,
+    "game_version": "1.0",
+    "rules": {
+      "capture_sum": 15,
+      "cards_per_hand": 3,
+      "initial_table_cards": 4
+    }
+  },
+  "timestamp": "2025-02-06T12:12:37.653174",
+  "game_log": [
+    {
+      "player": "google/gemini-2.0-flash-001",
+      "hand": [
+        "Rey of Coins",
+        "1 of Batons",
+        "5 of Batons"
+      ],
+      "table_before": [
+        "1 of Cups",
+        "Sota of Swords",
+        "Caballo of Batons",
+        "Caballo of Cups"
+      ],
+      "played_card": "Rey of Coins",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Cups",
+        "Sota of Swords",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins"
+      ]
+    },
+    {
+      "player": "mistralai/ministral-8b",
+      "hand": [
+        "Caballo of Coins",
+        "Caballo of Swords",
+        "3 of Cups"
+      ],
+      "table_before": [
+        "1 of Cups",
+        "Sota of Swords",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins"
+      ],
+      "played_card": "Caballo of Coins",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Cups",
+        "Sota of Swords",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins"
+      ]
+    },
+    {
+      "player": "google/gemini-2.0-flash-001",
+      "hand": [
+        "6 of Coins",
+        "7 of Swords",
+        "4 of Swords"
+      ],
+      "table_before": [
+        "1 of Cups",
+        "Sota of Swords",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins"
+      ],
+      "played_card": "6 of Coins",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Cups",
+        "Sota of Swords",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "6 of Coins"
+      ]
+    },
+    {
+      "player": "mistralai/ministral-8b",
+      "hand": [
+        "Rey of Cups",
+        "Rey of Swords",
+        "4 of Coins"
+      ],
+      "table_before": [
+        "1 of Cups",
+        "Sota of Swords",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "6 of Coins"
+      ],
+      "played_card": "Rey of Swords",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Cups",
+        "Sota of Swords",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "6 of Coins",
+        "Rey of Swords"
+      ]
+    },
+    {
+      "player": "google/gemini-2.0-flash-001",
+      "hand": [
+        "1 of Swords",
+        "5 of Coins",
+        "Sota of Batons"
+      ],
+      "table_before": [
+        "1 of Cups",
+        "Sota of Swords",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "6 of Coins",
+        "Rey of Swords"
+      ],
+      "played_card": "1 of Swords",
+      "action": "Captured Sota of Swords, 6 of Coins",
+      "escoba": false,
+      "table_after": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords"
+      ]
+    },
+    {
+      "player": "mistralai/ministral-8b",
+      "hand": [
+        "Sota of Cups",
+        "5 of Swords",
+        "4 of Cups"
+      ],
+      "table_before": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords"
+      ],
+      "played_card": "Sota of Cups",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups"
+      ]
+    },
+    {
+      "player": "google/gemini-2.0-flash-001",
+      "hand": [
+        "5 of Cups",
+        "2 of Batons",
+        "7 of Batons"
+      ],
+      "table_before": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups"
+      ],
+      "played_card": "5 of Cups",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups"
+      ]
+    },
+    {
+      "player": "mistralai/ministral-8b",
+      "hand": [
+        "3 of Swords",
+        "Sota of Coins",
+        "7 of Coins"
+      ],
+      "table_before": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups"
+      ],
+      "played_card": "Sota of Coins",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins"
+      ]
+    },
+    {
+      "player": "google/gemini-2.0-flash-001",
+      "hand": [
+        "1 of Coins",
+        "7 of Cups",
+        "2 of Swords"
+      ],
+      "table_before": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins"
+      ],
+      "played_card": "1 of Coins",
+      "action": "Played card to table (no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins",
+        "1 of Coins"
+      ]
+    },
+    {
+      "player": "mistralai/ministral-8b",
+      "hand": [
+        "3 of Batons",
+        "2 of Coins",
+        "6 of Batons"
+      ],
+      "table_before": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins",
+        "1 of Coins"
+      ],
+      "played_card": "2 of Coins",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins",
+        "1 of Coins",
+        "2 of Coins"
+      ]
+    },
+    {
+      "player": "google/gemini-2.0-flash-001",
+      "hand": [
+        "2 of Cups",
+        "4 of Batons",
+        "3 of Coins"
+      ],
+      "table_before": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins",
+        "1 of Coins",
+        "2 of Coins"
+      ],
+      "played_card": "2 of Cups",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins",
+        "1 of Coins",
+        "2 of Coins",
+        "2 of Cups"
+      ]
+    },
+    {
+      "player": "mistralai/ministral-8b",
+      "hand": [
+        "6 of Cups",
+        "Rey of Batons",
+        "6 of Swords"
+      ],
+      "table_before": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins",
+        "1 of Coins",
+        "2 of Coins",
+        "2 of Cups"
+      ],
+      "played_card": "Rey of Batons",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins",
+        "1 of Coins",
+        "2 of Coins",
+        "2 of Cups",
+        "Rey of Batons"
+      ]
+    },
+    {
+      "player": "google/gemini-2.0-flash-001",
+      "hand": [
+        "4 of Batons",
+        "3 of Coins"
+      ],
+      "table_before": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins",
+        "1 of Coins",
+        "2 of Coins",
+        "2 of Cups",
+        "Rey of Batons"
+      ],
+      "played_card": "4 of Batons",
+      "action": "Played card to table (no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins",
+        "1 of Coins",
+        "2 of Coins",
+        "2 of Cups",
+        "Rey of Batons",
+        "4 of Batons"
+      ]
+    },
+    {
+      "player": "mistralai/ministral-8b",
+      "hand": [
+        "6 of Cups",
+        "6 of Swords"
+      ],
+      "table_before": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins",
+        "1 of Coins",
+        "2 of Coins",
+        "2 of Cups",
+        "Rey of Batons",
+        "4 of Batons"
+      ],
+      "played_card": "6 of Cups",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins",
+        "1 of Coins",
+        "2 of Coins",
+        "2 of Cups",
+        "Rey of Batons",
+        "4 of Batons",
+        "6 of Cups"
+      ]
+    },
+    {
+      "player": "google/gemini-2.0-flash-001",
+      "hand": [
+        "3 of Coins"
+      ],
+      "table_before": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins",
+        "1 of Coins",
+        "2 of Coins",
+        "2 of Cups",
+        "Rey of Batons",
+        "4 of Batons",
+        "6 of Cups"
+      ],
+      "played_card": "3 of Coins",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins",
+        "1 of Coins",
+        "2 of Coins",
+        "2 of Cups",
+        "Rey of Batons",
+        "4 of Batons",
+        "6 of Cups",
+        "3 of Coins"
+      ]
+    },
+    {
+      "player": "mistralai/ministral-8b",
+      "hand": [
+        "6 of Swords"
+      ],
+      "table_before": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins",
+        "1 of Coins",
+        "2 of Coins",
+        "2 of Cups",
+        "Rey of Batons",
+        "4 of Batons",
+        "6 of Cups",
+        "3 of Coins"
+      ],
+      "played_card": "6 of Swords",
+      "action": "Played card to table (invalid capture provided, treated as no capture)",
+      "escoba": false,
+      "table_after": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins",
+        "1 of Coins",
+        "2 of Coins",
+        "2 of Cups",
+        "Rey of Batons",
+        "4 of Batons",
+        "6 of Cups",
+        "3 of Coins",
+        "6 of Swords"
+      ]
+    },
+    {
+      "event": "finalize_round",
+      "player": "google/gemini-2.0-flash-001",
+      "collected": [
+        "1 of Cups",
+        "Caballo of Batons",
+        "Caballo of Cups",
+        "Rey of Coins",
+        "Caballo of Coins",
+        "Rey of Swords",
+        "Sota of Cups",
+        "5 of Cups",
+        "Sota of Coins",
+        "1 of Coins",
+        "2 of Coins",
+        "2 of Cups",
+        "Rey of Batons",
+        "4 of Batons",
+        "6 of Cups",
+        "3 of Coins",
+        "6 of Swords"
+      ]
+    },
+    {
+      "event": "final_scores",
+      "scores": {
+        "google/gemini-2.0-flash-001": 2,
+        "mistralai/ministral-8b": 0
+      }
+    }
+  ]
+}

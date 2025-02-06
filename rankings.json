@@ -1,14 +1,43 @@
 {
   "google/gemini-2.0-flash-001": {
-    "games_played": 2,
-    "total_score": 5,
-    "wins": 2,
-    "average_score": 2.5
+    "elo": 1053.1978381337333,
+    "games_played": 5,
+    "total_score": 11,
+    "matchups": {
+      "mistralai/ministral-8b": {
+        "wins": 3,
+        "losses": 0,
+        "draws": 1
+      },
+      "openai/gpt-4o-mini": {
+        "wins": 1,
+        "losses": 0,
+        "draws": 0
+      }
+    }
   },
   "mistralai/ministral-8b": {
+    "elo": 960.7981117569904,
+    "games_played": 4,
+    "total_score": 1,
+    "matchups": {
+      "google/gemini-2.0-flash-001": {
+        "wins": 0,
+        "losses": 3,
+        "draws": 1
+      }
+    }
+  },
+  "openai/gpt-4o-mini": {
+    "elo": 986.0040501092764,
     "games_played": 1,
     "total_score": 0,
-    "wins": 0,
-    "average_score": 0.0
+    "matchups": {
+      "google/gemini-2.0-flash-001": {
+        "wins": 0,
+        "losses": 1,
+        "draws": 0
+      }
+    }
   }
 }

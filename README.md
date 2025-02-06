@@ -7,9 +7,9 @@ At the moment the only cheap model that can consistently win is Gemini 2.0 Flash
 
 ## TODO
 
-- Improve web functionality
+- Improve web functionality, show logs inmediatly
 - Add -n to for number of games
-- Add moregame rules (4 of same number is discard, final counting real, 7 velo...)
+- Add more game rules (4 of same number is discard, final counting real, 7 velo, Ace is Wildcard...)
 - Add more card games / teams
 - better game logs, human readable
 
